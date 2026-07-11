@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # Copyright (c) 2002-2008 ActiveState Software Inc.
 # License: MIT License (http://www.opensource.org/licenses/mit-license.php)
 

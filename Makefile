@@ -165,7 +165,7 @@ OLD_CHECKSUM := "$(shell [ -f .checksum ] && cat .checksum)"
 $(shell [ $(CHECKSUM) != $(OLD_CHECKSUM) ] && echo $(CHECKSUM) > .checksum)
 
 toBool = $(if $(findstring 1,$(1)),true,false)
-PREPROCESS = python tools/preprocess-1.1.0/lib/preprocess.py -s \
+PREPROCESS = py -2 tools/preprocess-1.1.0/lib/preprocess.py -s \
              -D RELEASE=$(call toBool,$(RELEASE)) \
              -D PROFILE=$(PROFILE) \
              -D PROFILE_FORMAT=$(PROFILE_FORMAT) \
